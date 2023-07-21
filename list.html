@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groceries List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>
+      <div class="header">
+        <div class="titlediv">
+          <h1>Welcome to Groceries App</h1>
+          <input type="color" id="bkcolor" />
+        </div>
+
+        <div class="newitemdiv">
+          <input
+            type="text"
+            class="new-item buttonglass"
+            id="newitem"
+            placeholder="Add new item"
+          />
+          <button id="add-item-button" type="submit" class="buttonglass">
+            +
+          </button>
+        </div>
+      </div>
+      <div id="body">
+        <div id="list" class="list">
+          <!-- <div class="item-grp">
+          <input
+            type="text"
+            class="list-item"
+            name="items"
+            id="item1"
+            readonly
+            value="Rice"
+          />
+          <button
+            id="remove-item1"
+            type="submit"
+            class="remove-item buttonglass"
+          >
+            -
+          </button>
+        </div> -->
+        </div>
+      </div>
+      <div id="whatsapp-button" type="submit" class="buttonglass">
+        <input type="tel" id="phoneno" placeholder="Enter phone number" />
+        <a
+          id="whatsapp-link"
+          aria-label="Chat on WhatsApp"
+          href="https://api.whatsapp.com/send?phone="
+        >
+          <img id="whatsapp-button-img" src="resources/whatsapp.png" />
+        </a>
+        <!-- <input type="file" multiple onchange="getItemsListFromUI(this)" /> -->
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
